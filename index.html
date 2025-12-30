@@ -6,6 +6,14 @@
     <title>AR Security (Anshu Raj Security) | Bouncer & Guard Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPCJH6G6TS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VPCJH6G6TS');
+    </script>
     <style>
         * {
             margin: 0;
@@ -1047,10 +1055,19 @@
             
             .about-content {
                 flex-direction: column;
+                align-items: stretch;
             }
 
             .why-content {
                 flex-direction: column;
+                align-items: stretch;
+            }
+
+            .about-text,
+            .about-image,
+            .why-text,
+            .why-image {
+                width: 100%;
             }
 
             .cta-box {
@@ -1074,6 +1091,9 @@
                 flex-direction: column;
                 align-items: center;
                 padding-top: 50px;
+                padding-bottom: 40px;
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
                 transition: left 0.3s;
             }
             
@@ -1109,6 +1129,24 @@
                 margin-top: 15px;
             }
 
+            .about-stats {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .cta-box {
+                padding: 32px;
+            }
+
+            .contact-form {
+                padding: 32px;
+            }
+
+            .review-form-wrap {
+                padding: 28px;
+            }
+
             .review-form-grid {
                 grid-template-columns: 1fr;
             }
@@ -1122,6 +1160,10 @@
             .hero h1 {
                 font-size: 2rem;
             }
+
+            .hero p {
+                font-size: 1.05rem;
+            }
             
             .section {
                 padding: 70px 0;
@@ -1129,6 +1171,70 @@
             
             .stat-number {
                 font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .hero-actions .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero-media img {
+                max-width: 360px;
+            }
+
+            .hero-rating {
+                padding: 10px 14px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-content {
+                padding: 24px;
+            }
+
+            .about-stats {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            .cta-box {
+                padding: 24px;
+                text-align: center;
+                align-items: center;
+            }
+
+            .cta-actions {
+                width: 100%;
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .cta-actions .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .contact-form {
+                padding: 24px;
+            }
+
+            .review-form-wrap {
+                padding: 24px;
+            }
+
+            .testimonial-card {
+                padding: 24px;
             }
         }
     </style>
@@ -1414,12 +1520,12 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <div class="testimonial-text">I’ve been using their residential security service and I couldn’t be happier. The guards are disciplined, punctual, and always alert.</div>
+                    <div class="testimonial-text">We hired AR Security for our apartment society in Mansarovar. The guard maintains visitor entries properly, does regular night rounds, and is very polite with residents.</div>
                     <div class="testimonial-footer">
                         <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
                         <div>
-                            <div class="testimonial-author">Residential Client</div>
-                            <div class="testimonial-role">Jaipur</div>
+                            <div class="testimonial-author">Ravi Kumar</div>
+                            <div class="testimonial-role">Mansarovar, Jaipur</div>
                         </div>
                     </div>
                 </div>
@@ -1432,12 +1538,12 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <div class="testimonial-text">Their commercial security team is excellent. Our office is now well-monitored, and their quick response system gives complete peace of mind.</div>
+                    <div class="testimonial-text">For our showroom, the team provided disciplined security and good crowd/parking management during peak hours. Professional behaviour and quick updates whenever anything unusual happens.</div>
                     <div class="testimonial-footer">
                         <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
                         <div>
-                            <div class="testimonial-author">Commercial Client</div>
-                            <div class="testimonial-role">Jaipur</div>
+                            <div class="testimonial-author">Shyam Sharma</div>
+                            <div class="testimonial-role">Vaishali Nagar, Jaipur</div>
                         </div>
                     </div>
                 </div>
@@ -1450,12 +1556,66 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <div class="testimonial-text">We hired them for event security and everything was handled professionally—from crowd control to VIP protection. Highly recommended!</div>
+                    <div class="testimonial-text">We booked them for wedding event security. Entry control and parking were handled smoothly, and the bouncers managed a small argument calmly without creating a scene.</div>
                     <div class="testimonial-footer">
                         <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
                         <div>
-                            <div class="testimonial-author">Event Client</div>
-                            <div class="testimonial-role">Jaipur</div>
+                            <div class="testimonial-author">Ravi Verma</div>
+                            <div class="testimonial-role">Wedding Event, Jaipur</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star muted"></i>
+                    </div>
+                    <div class="testimonial-text">We use their guards at our hotel on Tonk Road. Shift handover is well-managed and response is quick. There was a small timing issue initially, but it was resolved immediately.</div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <div class="testimonial-author">Mukesh Sharma</div>
+                            <div class="testimonial-role">Tonk Road, Jaipur</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="testimonial-text">Needed night security for a family function. The guards were on time, well-uniformed, and respectful with guests. Very good coordination with the venue staff.</div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <div class="testimonial-author">Anjali Singh</div>
+                            <div class="testimonial-role">Jagatpura, Jaipur</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star muted"></i>
+                    </div>
+                    <div class="testimonial-text">Our office has better visitor control now - proper ID checks, register maintained, and courteous communication. Overall great service and reliable follow-up from the supervisor.</div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <div class="testimonial-author">Pooja Mehta</div>
+                            <div class="testimonial-role">C-Scheme, Jaipur</div>
                         </div>
                     </div>
                 </div>
