@@ -35,6 +35,12 @@
             line-height: 1.6;
             color: var(--light);
             background-color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
         
         h1, h2, h3, h4 {
@@ -887,6 +893,8 @@
         
         .contact-details p {
             color: #d1d1d1;
+            overflow-wrap: anywhere;
+            word-break: break-word;
         }
         
         .contact-form {
@@ -998,6 +1006,8 @@
         
         .footer-links ul li {
             margin-bottom: 12px;
+            overflow-wrap: anywhere;
+            word-break: break-word;
         }
         
         .footer-links ul li a {
@@ -1177,6 +1187,19 @@
                 padding: 0 16px;
             }
 
+            .header-container {
+                padding: 14px 0;
+            }
+
+            .logo-text {
+                font-size: 20px;
+            }
+
+            .logo-icon {
+                font-size: 22px;
+                margin-right: 8px;
+            }
+
             .hero-actions {
                 flex-direction: column;
                 align-items: stretch;
@@ -1193,6 +1216,10 @@
 
             .hero-rating {
                 padding: 10px 14px;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr;
             }
 
             .services-grid {
